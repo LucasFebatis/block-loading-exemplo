@@ -1,0 +1,27 @@
+div {
+	width: -webkit-fill-available;
+	height: 100px;
+	background-color: #00f;
+	position: relative;
+	overflow: hidden;
+}
+
+div:after {
+	top: 0;
+	width: 0;
+	bottom: 0;
+	left: -20px;
+	content: "";
+	position: absolute;
+	animation: markerover 2s infinite;
+	box-shadow: 0 0 40px 50px rgba(93, 149, 239, 0.6);
+}
+
+@keyframes markerover {
+	0% {
+		left: -20px;
+	}
+	100% {
+		left: 150%;
+	}
+}
